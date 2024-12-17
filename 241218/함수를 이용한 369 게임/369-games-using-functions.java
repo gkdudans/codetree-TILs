@@ -25,7 +25,7 @@ public class Main {
     public static boolean hasOneOfThem(int n){ 
         for(int i=0; i<6; i++){
             if(n == 0) break;
-            if((n%10)%3 == 0) return true;
+            if(n%10 == 3 | n%10 == 6 | n%10 == 9) return true;
             n /= 10; 
         }
         return false;
