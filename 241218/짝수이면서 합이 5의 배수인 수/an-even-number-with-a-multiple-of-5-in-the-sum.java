@@ -10,7 +10,7 @@ public class Main {
     public static boolean isMultipleOfFive(int n){
         int a = n/10;
         int b = n%10;
-        if((a+b)%5==0) return true;
+        if((a+b)%5==0 && n%2==0) return true;
         else return false;
     }
 }
