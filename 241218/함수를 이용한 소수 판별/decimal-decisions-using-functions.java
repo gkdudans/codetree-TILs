@@ -11,14 +11,14 @@ public class Main {
     public static int SumOfPrime(int a, int b){
         int sum = 0;
         for(int i=a; i<=b; i++){
-            if(isPrime(i)) sum+= i;
+            if(isPrime(i)) sum += i;
         }
         return sum;
     }
 
     public static boolean isPrime(int n){
         for(int i=2; i<n; i++){
-            if(n%i == 0) return false;
+            if(n%i == 0 | n==1) return false;
         }
         return true;
     }
