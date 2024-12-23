@@ -22,7 +22,7 @@ public class Main {
                 if(1<=D && D<29) printResult(M);
                 else System.out.print("-1");
             }
-            else if(M==4 | M==6 | M==9){
+            else if(M==4 | M==6 | M==9 | M==11){
                 if(1<=D && D<31) printResult(M);
                 else System.out.print("-1");
             }
