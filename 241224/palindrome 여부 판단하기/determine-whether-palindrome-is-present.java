@@ -7,15 +7,12 @@ public class Main {
         isPalindrome(str);
     }
     public static void isPalindrome(String str){
-        if(str.length()%2==0) System.out.print("No");
-        else{
-            for(int i=0; i<str.length(); i++){
-                if(str.charAt(i) != str.charAt(str.length()-i-1)){
-                    System.out.print("No");
-                    return;
-                }
+       for(int i=0; i<str.length(); i++){
+            if(str.charAt(i) != str.charAt(str.length()-i-1)){
+                System.out.print("No");
+                return;
             }
-            System.out.print("Yes");
         }
+        System.out.print("Yes");
     }
 }
