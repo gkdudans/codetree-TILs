@@ -11,21 +11,28 @@ public class Main {
     public static void isMatching(int Y, int M, int D){
         if(isLeap(Y) && M==2){
             if(1<=D && D<30) printResult(M);
+            else System.out.print("-1");
         }
         else{
-            if(M==1 | M==3 | M==5 | M==7 | M==8 | M==10 | M==12) 
+            if(M==1 | M==3 | M==5 | M==7 | M==8 | M==10 | M==12){
                 if(1<=D && D<32) printResult(M);
-            else if(M==2)
+                else System.out.print("-1");
+            }
+            else if(M==2){
                 if(1<=D && D<29) printResult(M);
-            else if(M==4 | M==6 | M==9)
+                else System.out.print("-1");
+            }
+            else if(M==4 | M==6 | M==9){
                 if(1<=D && D<31) printResult(M);
-            else System.out.print("-1"); 
+                else System.out.print("-1");
+            }
+            else System.out.print("-1");
         }
     }
     public static boolean isLeap(int Y){
         if(Y%4==0 && Y%100!=0) return true;
-        else if(Y%100==0 && Y%400==0) return true;
-        else return false;
+        if(Y%100==0 && Y%400==0) return true;
+        return false;
     }
     public static void printResult(int M){
         if(3<=M && M<6) System.out.print("Spring");
