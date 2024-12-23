@@ -12,7 +12,7 @@ public class Main {
             for(int i=0; i<str.length(); i++){
                 if(str.charAt(i) != str.charAt(str.length()-i-1)){
                     System.out.print("No");
-                    break;
+                    return;
                 }
             }
             System.out.print("Yes");
